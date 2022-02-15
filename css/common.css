@@ -1,0 +1,1279 @@
+@charset "UTF-8";
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+:root { --page-primary: #22356F; --page-secondary: #62D0DF; --page-success: #198754; --page-info: #EDFDFF; --page-warning: #FAB63E; --page-danger: #C70101; --page-light: #F4F9E2; --page-dark: #212529; --page-white: #ffffff; --page-black: #000000; --page-orange: #E9B730; --page-pink: #FFE2DE; --page-lightgreen: #C4E769; --page-dirtygreen: #76B58B; --page-blue: #0052C1; --page-purple: #8F00FF; --page-dingypurple: #DEE1FF; --page-primary-rgb: 34, 53, 111; --page-secondary-rgb: 98, 208, 223; --page-success-rgb: 25, 135, 84; --page-info-rgb: 237, 253, 255; --page-warning-rgb: 250, 182, 62; --page-danger-rgb: 199, 1, 1; --page-light-rgb: 244, 249, 226; --page-dark-rgb: 33, 37, 41; }
+
+@media (prefers-reduced-motion: no-preference) { :root { scroll-behavior: smooth; } }
+
+@media (min-width: 576px) { .page { height: 100%; } }
+
+.page__wrapper { display: flex; flex-direction: column; min-height: 100%; }
+
+.page__wrapper .footer { flex: 0 0 auto; }
+
+.page__content { flex: 1 0 auto; }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body { font-size: 1rem; margin: 0; font-family: "Larsseit", sans-serif; font-weight: 400; line-height: 1.35; color: #22356F; background-color: #ffffff; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(34, 53, 111, 0); }
+
+hr { margin: 0 0; color: #000000; background-color: currentColor; border: 0; }
+
+hr:not([size]) { height: 1px; }
+
+h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 0.5625rem; font-weight: 500; line-height: 1.15; }
+
+h1 { font-size: calc(1.375rem + 1.5vw); }
+
+@media (min-width: 1200px) { h1 { font-size: 2.5rem; } }
+
+h2 { font-size: calc(1.325rem + 0.9vw); }
+
+@media (min-width: 1200px) { h2 { font-size: 2rem; } }
+
+h3 { font-size: calc(1.3rem + 0.6vw); }
+
+@media (min-width: 1200px) { h3 { font-size: 1.75rem; } }
+
+h4 { font-size: calc(1.275rem + 0.3vw); }
+
+@media (min-width: 1200px) { h4 { font-size: 1.5rem; } }
+
+h5 { font-size: 1.25rem; }
+
+h6 { font-size: 1rem; }
+
+p { margin-top: 0; margin-bottom: 0.375rem; }
+
+abbr[title], abbr[data-bs-original-title] { -webkit-text-decoration: underline dotted; text-decoration: underline dotted; cursor: help; -webkit-text-decoration-skip-ink: none; text-decoration-skip-ink: none; }
+
+address { margin-bottom: 0.375rem; font-style: normal; line-height: inherit; }
+
+ul, ol, li { padding: 0; list-style: none; }
+
+ol, ul, dl { margin-top: 0; margin-bottom: 1.125rem; }
+
+ol ol, ul ul, ol ul, ul ol { margin-bottom: 0; }
+
+dt { font-weight: 700; }
+
+dd { margin-bottom: 0.375rem; margin-left: 0; }
+
+blockquote { margin: 0 0 1.125rem; }
+
+b, strong { font-weight: 700; }
+
+small { font-size: 0.875em; }
+
+mark { padding: 0.2em; background-color: #fcf8e3; }
+
+sub, sup { font-size: 0.75em; position: relative; line-height: 0; vertical-align: baseline; }
+
+sub { bottom: -.25em; }
+
+sup { top: -.5em; }
+
+a { color: inherit; text-decoration: none; }
+
+a:hover { color: #000000; }
+
+a:not([href]):not([class]), a:not([href]):not([class]):hover { color: inherit; text-decoration: none; }
+
+pre, code, kbd, samp { font-size: 1em; font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; direction: ltr /* rtl:ignore */; unicode-bidi: bidi-override; }
+
+pre { font-size: 0.875em; display: block; margin-top: 0; margin-bottom: 1.125rem; overflow: auto; }
+
+pre code { font-size: inherit; color: inherit; word-break: normal; }
+
+code { font-size: 0.875em; color: #d63384; word-wrap: break-word; }
+
+a > code { color: inherit; }
+
+kbd { padding: 0.2rem 0.4rem; font-size: 0.875em; color: #ffffff; background-color: #e6e6e6; border-radius: 4px; }
+
+kbd kbd { font-size: 1em; padding: 0; font-weight: 700; }
+
+figure { margin: 0 0 1.125rem; }
+
+img { max-width: 100%; }
+
+svg { max-width: 100%; max-height: 100%; stroke-width: 0; fill: currentColor; pointer-events: none; }
+
+img, svg { vertical-align: middle; }
+
+table { caption-side: bottom; border-collapse: collapse; }
+
+caption { padding-top: 0.5625rem; padding-bottom: 0.5625rem; color: #6c757d; text-align: left; }
+
+th { text-align: inherit; text-align: -webkit-match-parent; }
+
+thead, tbody, tfoot, tr, td, th { border-color: inherit; border-style: solid; border-width: 0; }
+
+label { display: inline-block; }
+
+button { border-radius: 0; border: none; padding: 0; margin: 0; background-color: transparent; color: inherit; display: inline-block; }
+
+button:focus:not(:focus-visible) { outline: 0; }
+
+input, button, select, optgroup, textarea { font-size: inherit; margin: 0; font-family: inherit; line-height: inherit; }
+
+input[type='number'] { -moz-appearance: textfield; }
+
+input[type='number']::-webkit-outer-spin-button, input[type='number']::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+button, select { text-transform: none; }
+
+[role='button'] { cursor: pointer; }
+
+select { word-wrap: normal; }
+
+select:disabled { opacity: 1; }
+
+[list]::-webkit-calendar-picker-indicator { display: none; }
+
+button, [type='button'], [type='reset'], [type='submit'] { -webkit-appearance: button; }
+
+button:not(:disabled), [type='button']:not(:disabled), [type='reset']:not(:disabled), [type='submit']:not(:disabled) { cursor: pointer; }
+
+::-moz-focus-inner { padding: 0; border-style: none; }
+
+textarea { resize: none; }
+
+fieldset { min-width: 0; padding: 0; margin: 0; border: 0; }
+
+legend { float: left; width: 100%; padding: 0; margin-bottom: 0.375rem; font-size: 1.25rem; line-height: inherit; }
+
+legend + * { clear: left; }
+
+::-webkit-inner-spin-button { height: auto; }
+
+[type='search'] { outline-offset: -2px; -webkit-appearance: textfield; }
+
+::-webkit-search-decoration { -webkit-appearance: none; }
+
+::-webkit-color-swatch-wrapper { padding: 0; }
+
+::-webkit-file-upload-button { font: inherit; -webkit-appearance: button; }
+
+output { display: inline-block; }
+
+iframe { border: 0; }
+
+summary { display: list-item; cursor: pointer; }
+
+progress { vertical-align: baseline; }
+
+[hidden] { display: none !important; }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+.logo { font-size: calc(1.275rem + 0.3vw); transition: 0.1s; color: #62D0DF; opacity: 1; }
+
+@media (min-width: 1200px) { .logo { font-size: 1.5rem; } }
+
+@media (prefers-reduced-motion: reduce) { .logo { transition: none; } }
+
+@media (max-width: 991.98px) { .logo { display: none; } }
+
+.header { transition: 0.1s; position: fixed; width: 100%; z-index: 5; }
+
+@media (prefers-reduced-motion: reduce) { .header { transition: none; } }
+
+.header.header--hide .header__nav-link { padding: 0.125rem 0; }
+
+@media (min-width: 992px) { .header--hide .header__search { opacity: 0; transform: scale(0); } }
+
+.header--hide .logo, .header--hide .button { transform: scale(0); opacity: 0; cursor: auto; }
+
+.header--paint { background-color: #EDFDFF; }
+
+.header__nav-list { color: #22356F; }
+
+.header__nav-link { font-size: 0.875rem; transition: all 0.2s ease-in-out; position: relative; padding: 0.75rem 0; cursor: pointer; }
+
+@media (prefers-reduced-motion: reduce) { .header__nav-link { transition: none; } }
+
+.header__nav-link--active::after { transition: width; content: ""; position: absolute; bottom: 0; left: calc(50% - (3.125rem / 2)); width: 3.125rem; height: 0.125rem; background-color: #22356F; }
+
+@media (prefers-reduced-motion: reduce) { .header__nav-link--active::after { transition: none; } }
+
+.header__nav .header__nav-link + .header__nav-link { margin-left: 1.875rem; }
+
+@media (max-width: 991.98px) { .header__nav { display: none; } }
+
+.header .button { transition: all 0.2s ease-in-out; }
+
+@media (prefers-reduced-motion: reduce) { .header .button { transition: none; } }
+
+@media (max-width: 991.98px) { .header .button { display: none; } }
+
+.header__menu-burger { display: block; position: relative; width: 2.1875rem; height: 1.375rem; z-index: 2; }
+
+.header__menu-burger.header__menu-burger--active span { opacity: 0; }
+
+.header__menu-burger.header__menu-burger--active::after, .header__menu-burger.header__menu-burger--active::before { top: 50%; }
+
+.header__menu-burger.header__menu-burger--active::after { transform: rotate(-45deg); }
+
+.header__menu-burger.header__menu-burger--active::before { transform: rotate(45deg); }
+
+.header__menu-burger span { display: block; top: 50%; transform: translateY(-50%); }
+
+.header__menu-burger span, .header__menu-burger::after, .header__menu-burger::before { transition: 0.1s; content: ''; position: absolute; width: 100%; height: 0.25rem; left: 0; background-color: #000000; }
+
+@media (prefers-reduced-motion: reduce) { .header__menu-burger span, .header__menu-burger::after, .header__menu-burger::before { transition: none; } }
+
+.header__menu-burger::before { top: 0; }
+
+.header__menu-burger::after { bottom: 0; }
+
+@media (min-width: 992px) { .header__menu-burger { display: none; } }
+
+.header__progressbar { height: 0.125rem; width: 0; background-color: #62D0DF; }
+
+.header__search { transition: 0.1s; position: relative; width: 2.5rem; }
+
+@media (prefers-reduced-motion: reduce) { .header__search { transition: none; } }
+
+.header__search-wrapper { transition: width, 0.1s; position: absolute; right: 2.5rem; top: 0; width: 0; overflow: hidden; border: 0.0625rem solid #212529; border-right: none; background-color: #F4F9E2; }
+
+@media (prefers-reduced-motion: reduce) { .header__search-wrapper { transition: none; } }
+
+.header__search-button { width: 2.5rem; height: 2.5rem; padding: 0.625rem; flex-shrink: 0; }
+
+.header__search-submit { height: calc(2.5rem + 2px); border: 0.0625rem solid #212529; border-left: none; background-color: #F4F9E2; }
+
+.header__search-input { width: 12.5rem; }
+
+.header__search.is-active .header__search-wrapper { width: calc(12.5rem + 2.5rem); }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+.footer { background-color: #62D0DF; padding: 30px 0; color: #ffffff; font-size: 14px; }
+
+.footer .copyright { position: relative; padding-left: 20px; }
+
+.footer .copyright::before { position: absolute; content: "©"; left: 0; top: calc(50% - 7px); }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+.form__group { display: block; margin-bottom: 0.75rem; width: 100%; }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+.form__label { display: block; padding-bottom: 0.375rem; }
+
+.form__field { width: 100%; }
+
+.form__field.placeholder { transition: all 0.1s ease; font-size: 0.875rem; }
+
+.form__field:-moz-placeholder { -moz-transition: all 0.1s ease; transition: all 0.1s ease; font-size: 0.875rem; }
+
+.form__field::-moz-placeholder { -moz-transition: all 0.1s ease; transition: all 0.1s ease; font-size: 0.875rem; }
+
+.form__field:-ms-input-placeholder { -ms-transition: all 0.1s ease; transition: all 0.1s ease; font-size: 0.875rem; }
+
+.form__field::-webkit-input-placeholder { -webkit-transition: all 0.1s ease; transition: all 0.1s ease; font-size: 0.875rem; }
+
+.form__field:focus.placeholder { opacity: 0; transform: translateX(0.375rem); }
+
+.form__field:focus:-moz-placeholder { opacity: 0; transform: translateX(0.375rem); }
+
+.form__field:focus::-moz-placeholder { opacity: 0; transform: translateX(0.375rem); }
+
+.form__field:focus:-ms-input-placeholder { opacity: 0; transform: translateX(0.375rem); }
+
+.form__field:focus::-webkit-input-placeholder { opacity: 0; transform: translateX(0.375rem); }
+
+.form__select { width: 100%; }
+
+.form__dropdown-button { position: relative; text-align: left; width: 100%; padding-right: 1.75rem; z-index: 1; }
+
+.form__dropdown-button .svg-icon { transition: transform 0.1s ease; position: absolute; right: 0.4375rem; top: 50%; width: 0.875rem; height: 0.875rem; transform-origin: center center; transform: translateY(-50%) rotateX(0); will-change: transform; }
+
+.form__dropdown-button:hover { cursor: pointer; }
+
+.form__dropdown-button.show .svg-icon { transform: translateY(-50%) rotateX(180deg); }
+
+.form__dropdown-button .spinner-border { color: #212529; }
+
+.form__dropdown-list { background-color: #ffffff; box-shadow: 0 0.45rem 1.5rem 0 rgba(0, 0, 0, 0.1); border-radius: 4px; }
+
+.form__dropdown-list-item { transition: background-color 0.1s ease; cursor: pointer; background-color: #ffffff; }
+
+.form__dropdown-list-item.is-selected { color: #FFE2DE; }
+
+.form__dropdown-list-item:hover, .form__dropdown-list-item.is-selected { background-color: rgba(33, 37, 41, 0.05); }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+.radio__content, .checkbox__content { position: relative; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+.radio__content:before, .radio__content:after, .checkbox__content:before, .checkbox__content:after { content: ""; display: block; position: absolute; }
+
+.radio__content:before, .checkbox__content:before { border: 1px solid #62D0DF; left: 0; top: 2px; }
+
+.radio__content:after, .checkbox__content:after { transition: transform 0.1s ease; background-color: #62D0DF; transform: scale3d(0, 0, 0); }
+
+.form__radio, .form__checkbox { cursor: pointer; }
+
+.form__radio input:checked + .radio__content:after, .form__radio input:checked + .checkbox__content:after, .form__checkbox input:checked + .radio__content:after, .form__checkbox input:checked + .checkbox__content:after { transform: scale3d(1, 1, 1); }
+
+.form__radio .radio__content { padding-left: 24px; }
+
+.form__radio .radio__content:before, .form__radio .radio__content:after { border-radius: 50%; }
+
+.form__radio .radio__content:before { width: 16px; height: 16px; }
+
+.form__radio .radio__content:after { width: 8px; height: 8px; top: calc(4px + 2px); left: 4px; }
+
+.form__checkbox .checkbox__content { padding-left: 24px; }
+
+.form__checkbox .checkbox__content:before, .form__checkbox .checkbox__content:after { border-radius: 2px; }
+
+.form__checkbox .checkbox__content:before { width: 16px; height: 16px; }
+
+.form__checkbox .checkbox__content:after { width: 8px; height: 8px; top: calc(4px + 2px); left: 4px; }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+.form__group { position: relative; }
+
+.form__group.is-need-validate { padding-bottom: 1.125rem; }
+
+.form__group.is-need-validate .form__group-notify { font-size: 0.875rem; white-space: nowrap; position: absolute; color: #C70101; left: 0; bottom: 0; }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+.ratio .lazy__image { position: absolute; }
+
+.lazy__image { position: relative; }
+
+.lazy__image-element { transition: opacity, 0.2s; opacity: 0; }
+
+@media (prefers-reduced-motion: reduce) { .lazy__image-element { transition: none; } }
+
+.lazy__image-element.is-loaded { opacity: 1; }
+
+.lazy__image-element.is-error:before { content: ""; position: absolute; display: block; left: 0; top: 0; width: 100%; height: 100%; background-color: #F4F9E2; }
+
+.lazy__image-element.is-error:after { font-size: 0.875rem; font-family: "Larsseit", sans-serif; content: attr(data-error); display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); white-space: nowrap; font-style: italic; }
+
+.lazy__image-element.is-error + .lazy__image-loader .spinner-border { -webkit-animation: none; animation: none; border: 0 none; }
+
+.lazy__image-element[style^='background-image'] { background-position: center center; background-size: cover; background-repeat: no-repeat; }
+
+.lazy__image-loader { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 1.75em; max-height: 1.75em; }
+
+.item-block { position: relative; margin: 20% 10% 0 10%; padding-top: 5%; color: #ffffff; }
+
+.item-block::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 2px; background-color: #ffffff; }
+
+.item-block .item-title { position: relative; padding-left: 21px; font-size: calc(1.3125rem + 0.75vw); }
+
+@media (min-width: 1200px) { .item-block .item-title { font-size: 1.875rem; } }
+
+.item-block .item-title::before { content: ""; position: absolute; top: 50%; transform: translateY(-50%); left: 0; border-radius: 50%; height: 9px; width: 9px; background-color: #E9B730; }
+
+.item--pink, .item--lightgreen, .item--dirtygreen, .item--lightblue, .item--blue, .item--darkblue, .item--purple, .item--dingypurple { transition: background-size, 0.5s; background-image: url("https://picsum.photos/seed/picsum/200/300"); background-size: 100% 0%; background-repeat: no-repeat; }
+
+@media (prefers-reduced-motion: reduce) { .item--pink, .item--lightgreen, .item--dirtygreen, .item--lightblue, .item--blue, .item--darkblue, .item--purple, .item--dingypurple { transition: none; } }
+
+.item--pink:hover, .item--lightgreen:hover, .item--dirtygreen:hover, .item--lightblue:hover, .item--blue:hover, .item--darkblue:hover, .item--purple:hover, .item--dingypurple:hover { background-size: 100% 100%; }
+
+@media (max-width: 767.98px) { .item--pink, .item--lightgreen, .item--dirtygreen, .item--lightblue, .item--blue, .item--darkblue, .item--purple, .item--dingypurple { background-size: 100% 100%; } }
+
+.item--pink { background-color: #FFE2DE; }
+
+.item--lightgreen { background-color: #C4E769; }
+
+.item--dirtygreen { background-color: #76B58B; }
+
+.item--lightblue { background-color: #62D0DF; }
+
+.item--blue { background-color: #0052C1; }
+
+.item--darkblue { background-color: #22356F; }
+
+.item--purple { background-color: #8F00FF; }
+
+.item--dingypurple { background-color: #DEE1FF; }
+
+.section-offset { background-repeat: no-repeat; }
+
+@media (max-width: 767.98px) { .section-offset { padding: 0 !important; } }
+
+.section-offset--start { padding-left: 8%; }
+
+.section-offset--end { padding-right: 8%; }
+
+.section-offset__wrap { position: relative; }
+
+.section-offset__wrap:before { content: ""; display: block; position: absolute; top: 0; left: -0.9375rem; width: calc(100% + 1.875rem); height: 100%; }
+
+@media (min-width: 992px) { .section-offset__wrap { padding-top: 12%; padding-bottom: 7%; } }
+
+@media (max-width: 991.98px) { .section-offset__wrap { padding-top: 10%; padding-bottom: 5%; } }
+
+.section-offset__content { position: relative; z-index: 3; width: 45%; }
+
+@media (max-width: 767.98px) { .section-offset__content { width: 100% !important; text-align: center; margin: 0 !important; } }
+
+.section-offset__label { text-transform: uppercase; }
+
+.section-offset__img { position: absolute; top: 0; z-index: 1; height: 100%; width: 40%; -o-object-fit: cover; object-fit: cover; overflow: hidden; }
+
+.section-offset__img > img { height: 100%; -o-object-fit: cover; object-fit: cover; }
+
+@media (max-width: 767.98px) { .section-offset__img { display: none; } }
+
+.section-offset__title--big { font-size: calc(1.525rem + 3.3vw); }
+
+@media (min-width: 1200px) { .section-offset__title--big { font-size: 4rem; } }
+
+.section-offset__title--middle { font-size: calc(1.425rem + 2.1vw); }
+
+@media (min-width: 1200px) { .section-offset__title--middle { font-size: 3rem; } }
+
+.section-offset__title--small { font-size: calc(1.35rem + 1.2vw); }
+
+@media (min-width: 1200px) { .section-offset__title--small { font-size: 2.25rem; } }
+
+.section-offset__desc { line-height: 1.75; padding-bottom: 15%; font-size: calc(1.275rem + 0.3vw); }
+
+@media (min-width: 1200px) { .section-offset__desc { font-size: 1.5rem; } }
+
+.section-offset__link { display: inline-block; padding: 20px; color: #FAB63E; letter-spacing: .1rem; }
+
+.section-offset__link:hover { background-color: #62D0DF; color: #ffffff; transition: all .5s; }
+
+.section-offset__link--alt { color: #62D0DF; }
+
+.section-offset__link--alt:hover { background-color: #FAB63E; }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+[data-bs-toggle='modal'] { cursor: pointer; /* pointer: fine - Desktop/Laptop and Desktop/Laptop+Touchscreen any-pointer: fine - Touchscreen+Mouse and Desktop/Laptop and Touchscreen and Desktop/Laptop+Touchscreen */ }
+
+@media (pointer: fine) and (any-hover: hover), (min-width: 0\0) { [data-bs-toggle='modal']:hover { color: #FFE2DE; } }
+
+.modal { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+.modal-content { padding: 1.5rem 2.25rem 2.25rem 2.25rem; }
+
+.modal-body { padding: 2.25rem 0 0 0; overflow-x: hidden; }
+
+.modal-close { transition: color; /* pointer: fine - Desktop/Laptop and Desktop/Laptop+Touchscreen any-pointer: fine - Touchscreen+Mouse and Desktop/Laptop and Touchscreen and Desktop/Laptop+Touchscreen */ }
+
+@media (prefers-reduced-motion: reduce) { .modal-close { transition: none; } }
+
+.modal-close svg { width: 1.5rem; height: 1.5rem; }
+
+@media (pointer: fine) and (any-hover: hover), (min-width: 0\0) { .modal-close:hover { color: #FFE2DE; } }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+.button { display: inline-block; background-color: #62D0DF; text-align: center; text-transform: uppercase; border-radius: 50px; color: #ffffff; }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+.toast { transition: all 0.1s cubic-bezier(0.215, 0.61, 0.355, 1); padding: 0.75rem 1.5rem; display: inline-flex; align-items: center; box-shadow: 0 0.45rem 0.375rem rgba(0, 0, 0, 0.15); border-radius: 4px; position: fixed; opacity: 0; max-width: calc(50% - 1.5rem); z-index: 7; color: #ffffff; }
+
+.toast.status--success { background-color: #198754; }
+
+.toast.status--warning { background-color: #FAB63E; }
+
+.toast.status--info { background-color: #EDFDFF; }
+
+.toast.status--danger { background-color: #C70101; }
+
+.toast-text { font-size: 0.875rem; margin-bottom: 0; padding-left: 1.125rem; padding-right: 0.75rem; font-weight: 500; }
+
+.toast-close { color: inherit; width: 2em; height: 2em; padding: 0 0.5em; }
+
+.toast-right { right: 15px; }
+
+.toast-left { left: 15px; }
+
+.toast-top { top: -150px; }
+
+.toast-bottom { bottom: -150px; }
+
+.toast-icon { width: 1.7em; height: 1.7em; margin-right: 1em; }
+
+.toast-center { margin-left: auto; margin-right: auto; left: 0; right: 0; max-width: -webkit-fit-content; max-width: -moz-fit-content; max-width: fit-content; }
+
+.toast.is-active { opacity: 1; }
+
+@media (max-width: 374.98px) { .toast-right, .toast-left { margin-left: auto; margin-right: auto; left: 0; right: 0; max-width: calc(100% - 1.875rem); } }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+@-webkit-keyframes fadeIn { from { opacity: 0;
+    visibility: hidden; }
+  to { opacity: 1;
+    visibility: visible; } }
+@keyframes fadeIn { from { opacity: 0;
+    visibility: hidden; }
+  to { opacity: 1;
+    visibility: visible; } }
+
+.dropdown { position: relative; }
+
+.dropdown-button-icon { flex: 0 0 auto; }
+
+.dropdown-button-icon svg { width: 1.5rem; height: 1.5rem; }
+
+.dropdown-button-arrow { transition: transform; }
+
+@media (prefers-reduced-motion: reduce) { .dropdown-button-arrow { transition: none; } }
+
+.dropdown-button-arrow svg { width: 0.75rem; height: 0.75rem; }
+
+.dropdown-button.show .dropdown-button-arrow { transform: rotate(180deg); }
+
+.dropdown-menu { display: none; position: absolute; z-index: 5; min-width: 100%; }
+
+.dropdown-menu-inner { width: 100%; margin-top: 0.75rem; background-color: #ffffff; border-radius: 4px; padding: 1em; }
+
+.dropdown-menu.show { display: block; }
+
+.dropdown-menu.show .dropdown-menu-inner { -webkit-animation: fadeIn 0.1s ease both; animation: fadeIn 0.1s ease both; }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+@media (min-width: 576px) { .breadcrumbs { display: flex; align-items: center; flex-wrap: wrap; padding-top: 0.75rem; padding-bottom: 0.75rem; } }
+
+@media (max-width: 575.98px) { .breadcrumbs { display: none; } }
+
+.breadcrumbs__item { position: relative; display: flex; align-items: center; }
+
+.breadcrumbs__item + .breadcrumbs__item { margin-left: 0.75rem; }
+
+.breadcrumbs__item + .breadcrumbs__item:before { content: '/'; display: inline; margin-right: 0.75rem; }
+
+.breadcrumbs__current { cursor: default; }
+
+.offcanvas { background-color: #EDFDFF; }
+
+.offcanvas .menu-link { display: inline-block; font-size: 20px; }
+
+.offcanvas .menu-link + .menu-link { margin-top: 5%; }
+
+.offcanvas .btn-close { position: relative; }
+
+.offcanvas .btn-close::before, .offcanvas .btn-close::after { content: ''; position: absolute; background-color: #000000; width: 100%; left: 0; height: 2px; }
+
+.offcanvas .btn-close::before { transform: rotate(45deg); }
+
+.offcanvas .btn-close::after { transform: rotate(-45deg); }
+
+@media (min-width: 992px) { .offcanvas { display: none; } }
+
+.swiper-button-prev:after, .swiper-button-next:after { color: #62D0DF; font-size: 30px; }
+
+.procedure-button-prev, .procedure-button-next { background-color: #22356F; padding: 5% 0; top: 50%; transform: translateY(-50%); margin-top: 0; }
+
+.procedure-button-prev { left: 0; border-radius: 0 50% 50% 0; }
+
+.procedure-button-next { right: 0; border-radius: 50% 0 0 50%; }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+.intro { position: relative; max-height: 100vh; background-color: #F4F9E2; overflow: hidden; }
+
+.intro__content { padding-top: 4%; padding-bottom: 8%; }
+
+.intro__title { padding-top: 5%; padding-bottom: 8%; font-weight: 700; font-size: calc(1.425rem + 2.1vw); }
+
+@media (min-width: 1200px) { .intro__title { font-size: 3rem; } }
+
+.intro__desc { line-height: 1.7; font-size: calc(1.275rem + 0.3vw); }
+
+@media (min-width: 1200px) { .intro__desc { font-size: 1.5rem; } }
+
+.intro__img { width: 60%; right: -0.9375rem; }
+
+.intro__img--front { z-index: 2; }
+
+.intro__img--back { z-index: 1; }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+.reasons { background-color: #62D0DF; }
+
+.reasons__content { color: #ffffff; }
+
+@media (min-width: 768px) and (max-width: 991.98px) { .reasons__content { width: 50%; } }
+
+.reasons__desc-span { font-weight: 500; }
+
+@media (max-width: 767.98px) { .reasons__desc-span { display: none; } }
+
+.reasons__desc-p { font-size: 1.25rem; }
+
+.reasons__title { padding-top: 0; }
+
+.reasons__img { right: -0.9375rem; }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+.about { padding-top: 10%; }
+
+.about__label { text-align: center; }
+
+.about__desc { font-size: calc(1.275rem + 0.3vw); }
+
+@media (min-width: 1200px) { .about__desc { font-size: 1.5rem; } }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+.help .title { text-align: center; padding-bottom: 1.5rem; font-weight: 300; }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+.procedure-swiper { position: relative; }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+@media (max-width: 991.98px) { .plans__content-pc { display: none; } }
+
+@media (min-width: 992px) { .plans__content-pc { display: block; } }
+
+@media (min-width: 992px) { .plans__content-mobile { display: none; } }
+
+@media (max-width: 991.98px) { .plans__content-mobile { display: block; } }
+
+.plans .plan-item { padding: 10% 15%; }
+
+@media (max-width: 991.98px) { .plans .plan-item .plan-block { text-align: center; } }
+
+.plans .plan-item .plan-block .block-desc { line-height: 1.75; color: #22356F; opacity: 50%; }
+
+@media (min-width: 992px) { .plans .plan-item .plan-block .block-desc { max-width: 18.75rem; } }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+.fact__img { left: -0.9375rem; }
+
+.fact__content { width: 50%; margin-left: 45%; }
+
+.fact__desc { padding-top: 30%; font-weight: 700; font-size: calc(1.35rem + 1.2vw); }
+
+@media (min-width: 1200px) { .fact__desc { font-size: 2.25rem; } }
+
+.fact__desc span { color: #62D0DF; }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+.contact { background-color: #22356F; }
+
+.contact__title { padding-top: 20%; padding-bottom: 10%; }
+
+.contact__img { right: -0.9375rem; }
+
+.contact__content { color: #ffffff; }
+
+.contact__desc { font-size: calc(1.35rem + 1.2vw); }
+
+@media (min-width: 1200px) { .contact__desc { font-size: 2.25rem; } }
+
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+/* Colors variables start */
+/* Colors variables end */
+/* Custom variables start*/
+/* Custom variables end*/
+/* Bootstrap variables start*/
+/* Bootstrap variables end*/
+/* Responsive font-size start*/
+/* Responsive font-size end*/
+/*---------------pseudo element default styles---------------*/
+/*---------------------pseudo full size---------------------*/
+/*--------------------proportional ratio--------------------*/
+/*--------------------placeholder styles--------------------*/
+/*------------------------transition------------------------*/
+/*--------------------background image--------------------*/
+/*--------------------absolute alignment--------------------*/
+/*------------------make triangle------------------*/
+/*---------------------------fonts---------------------------*/
+/*-----------------------map get recursive-----------------------*/
+/*-----------------------interaction support-----------------------*/
+@media (min-width: 576px) and (max-width: 767.98px) { .info { margin: 0; padding: 0; } }
+
+.info__content { font-size: 0.875rem; width: 55%; }
+
+@media (min-width: 768px) { .info__content { margin-left: 45%; } }
+
+@media (min-width: 768px) { .info__block { width: calc(100% / 3); } }
+
+@media (max-width: 767.98px) { .info__block { width: calc(100% / 2); } }
+
+@media (min-width: 768px) { .info .info__block + .info__block { margin-left: 5%; } }
+
+@media (max-width: 767.98px) { .info .info__block + .info__block { margin-top: 5%; } }
+
+.info__title { font-weight: 700; font-size: 0.875rem; }
+
+@media (min-width: 992px) { .info__title { padding-bottom: 3.125rem; } }
+
+.info__desc { line-height: 1.75; opacity: 50%; font-size: 0.875rem; }
+
+.info__img { left: -0.9375rem; }
+
+.info__link-list { margin-top: 15%; }
+
+.info__link-tel { opacity: 50%; }
+
+.info__link-mail { font-weight: 700; color: #0052C1; }
+
+/*# sourceMappingURL=common.css.map */
