@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Description of the page less than 150 characters">
+    <title>Навигатор по страницам</title>
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/common.css">
+  </head>
+  <body>
+    <div class="page position-relative" id="js-page-regular" data-paths="{&quot;images&quot;: &quot;img&quot;}">
+      <div class="page__wrapper" id="js-page-wrapper">
+        <div class="page__content">
+          <header class="header py-3 section-offset--start section-offset--end" id="js-header">
+            <div class="container-fluid">
+              <div class="content d-flex justify-content-end justify-content-lg-between align-items-center"><a class="logo">Thrivetalk</a>
+                <nav class="header__nav">
+                  <div class="header__nav-list d-flex justify-content-between"><a class="header__nav-link nav-link--active" href="#intro">Home</a><a class="header__nav-link" href="#about">About</a><a class="header__nav-link" href="#procedure">Services</a><a class="header__nav-link" href="#plans">Blog</a></div>
+                </nav>
+                <div class="d-flex justify-content-center align-items-center">
+                  <form class="header__search js-search">
+                    <div class="header__search-wrapper d-flex align-items-center">
+                      <button class="header__search-button header__search-close js-search-close" type="button">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#close"></use>
+                            </svg>
+                      </button>
+                      <input class="header__search-input" type="search" placeholder="Search.." name="search">
+                    </div>
+                    <button class="header__search-button header__search-submit js-search-submit" type="button">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#search"></use>
+                          </svg>
+                    </button>
+                  </form>
+                </div>
+                <button class="header__menu-burger" type="button" data-bs-toggle="offcanvas" data-bs-target="#siteMenu" aria-controls="siteMenu"><span> </span></button>
+              </div>
+            </div>
+            <div class="header__progressbar js-progressbar"></div>
+          </header>
+          <main>
+            <div class="container-fluid py-5">
+              <div class="row">
+                <div class="col-md-6 mx-auto">
+                  <h1 class="title title--normal pb-4">Навигатор по станицам</h1>
+                  <ul class="d-flex flex-column">
+                    <li class="mb-3" style="background-color: #e57373;"><a class="py-2 d-inline-block page__text--large d-block" href="ui.html" style="padding: 10px 15px; color: white;">Ui kit - без адаптивности</a></li>
+                    <li class="mb-3" style="background-color: #81c784;"><a class="py-2 d-inline-block page__text--large d-block" href="home.html" style="padding: 10px 15px; color: white;">Главная</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+        <footer class="footer js-footer section-offset--start">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="copyright">Copyright - ThriveTalk  2017</div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-start" id="siteMenu" tabindex="-1">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottom" tabindex="-1">Title</h5>
+        <button class="btn-close text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="offcanvas-nav">
+          <div class="offcanvas-menu d-flex flex-column justify-content-between"><a class="menu-link js-menu-link" href="#intro">Home</a><a class="menu-link js-menu-link" href="#about">About</a><a class="menu-link js-menu-link" href="#procedure">Services</a><a class="menu-link js-menu-link" href="#plans">Blog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/iePolyfills.js"></script>
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

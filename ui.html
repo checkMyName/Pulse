@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Description of the page less than 150 characters">
+    <title>Ui kit</title>
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/common.css">
+  </head>
+  <body>
+    <div class="page position-relative page--ui" id="js-page-regular" data-paths="{&quot;images&quot;: &quot;img&quot;}">
+      <div class="page__wrapper" id="js-page-wrapper">
+        <div class="page__content">
+          <header class="header py-3 section-offset--start section-offset--end" id="js-header">
+            <div class="container-fluid">
+              <div class="content d-flex justify-content-end justify-content-lg-between align-items-center"><a class="logo">Thrivetalk</a>
+                <nav class="header__nav">
+                  <div class="header__nav-list d-flex justify-content-between"><a class="header__nav-link nav-link--active" href="#intro">Home</a><a class="header__nav-link" href="#about">About</a><a class="header__nav-link" href="#procedure">Services</a><a class="header__nav-link" href="#plans">Blog</a></div>
+                </nav>
+                <div class="d-flex justify-content-center align-items-center">
+                  <form class="header__search js-search">
+                    <div class="header__search-wrapper d-flex align-items-center">
+                      <button class="header__search-button header__search-close js-search-close" type="button">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#close"></use>
+                            </svg>
+                      </button>
+                      <input class="header__search-input" type="search" placeholder="Search.." name="search">
+                    </div>
+                    <button class="header__search-button header__search-submit js-search-submit" type="button">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#search"></use>
+                          </svg>
+                    </button>
+                  </form>
+                </div>
+                <button class="header__menu-burger" type="button" data-bs-toggle="offcanvas" data-bs-target="#siteMenu" aria-controls="siteMenu"><span> </span></button>
+              </div>
+            </div>
+            <div class="header__progressbar js-progressbar"></div>
+          </header>
+          <main>
+            <div class="container">
+                  <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs-link" href="home.html">&lt;p&gt;Главная&lt;/p&gt;</a>
+                    </li>
+                    <li class="breadcrumbs__item"><span class="breadcrumbs__current">UI Kit</span>
+                    </li>
+                  </ul>
+            </div>
+            <div class="container">
+                  <h1 class="title">Заголовок 1 уровня</h1>
+                  <h2 class="title">Заголовок 2 уровня</h2>
+                  <h3 class="title">Заголовок 3 уровня</h3>
+                  <h4 class="title">Заголовок 4 уровня</h4>
+                  <h5 class="title">Заголовок 5 уровня</h5>
+                  <h6 class="title">Заголовок 6 уровня</h6>
+              <hr class="my-4">
+              <p><strong>Example text default paragraph:  </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur beatae distinctio dolorem dolorum ex harum, nesciunt nisi nobis praesentium quam quasi quod quos suscipit, ullam voluptates voluptatum? Nobis, totam!</p>
+              <p class="text-primary"><strong>Example text primary paragraph:  </strong>Example text primary paragraph: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur beatae distinctio dolorem dolorum ex harum, nesciunt nisi nobis praesentium quam quasi quod quos suscipit, ullam voluptates voluptatum? Nobis, totam!</p>
+              <p class="text-danger"><strong>Example text danger paragraph:  </strong>Example text danger paragraph: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur beatae distinctio dolorem dolorum ex harum, nesciunt nisi nobis praesentium quam quasi quod quos suscipit, ullam voluptates voluptatum? Nobis, totam!</p>
+              <p><small>Example text small</small></p>
+              <p><strong>Example text strong</strong></p>
+              <hr class="my-4">
+                  <button class="button button--default border rounded px-4 py-2" type="submit" data-bs-toggle="modal" data-bs-target="#js-example-modal"><span class="button__content">Button default</span></button>
+              <hr class="my-4">
+              <div class="row">
+                <div class="col-4">
+                      <div class="form__group">
+                        <label class="form__label">Default select:</label>
+                        <select class="form__select px-4 py-2">
+                          <option value="Default select option 1">Default select option 1</option>
+                          <option value="Default select option 2" selected>Default select option 2</option>
+                          <option value="Default select option 3">Default select option 3</option>
+                        </select>
+                      </div>
+                </div>
+                <div class="col-4">
+                      <div class="form__group" data-select-dropdown>
+                        <label class="form__label">Custom select:</label>
+                        <div class="form__field form__dropdown">
+                          <button class="form__dropdown-button border rounded py-2 px-3 text-ellipsis" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-select-dropdown-button>
+                            <div data-select-dropdown-selected>
+                              <div class="spinner-border spinner-border-sm"></div>
+                            </div>
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#arrow-down"></use>
+                                </svg>
+                          </button>
+                          <div class="form__dropdown-dropdown dropdown-menu" data-select-dropdown-menu>
+                            <ul class="form__dropdown-list">
+                              <li class="form__dropdown-list-item p-3" data-value="Custom select option 1" data-select-dropdown-option>Custom select option 1</li>
+                              <li class="form__dropdown-list-item p-3" data-value="Custom select option 2" data-select-dropdown-option>Custom select option 2</li>
+                              <li class="form__dropdown-list-item is-selected p-3" data-value="Custom select option 3" data-select-dropdown-option>Custom select option 3</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <input hidden type="text" data-select-dropdown-output>
+                      </div>
+                </div>
+              </div>
+              <form class="js-form-validate">
+                <div class="row py-4">
+                  <div class="col-md-6 col-lg-auto">
+                        <div class="form__group">
+                          <label class="form__radio">
+                            <input class="visually-hidden" type="radio" checked name="ui-radio"><span class="radio__content">Radio 1</span>
+                          </label>
+                        </div>
+                  </div>
+                  <div class="col-md-6 col-lg-auto">
+                        <div class="form__group">
+                          <label class="form__radio">
+                            <input class="visually-hidden" type="radio" name="ui-radio"><span class="radio__content">Radio 2</span>
+                          </label>
+                        </div>
+                  </div>
+                  <div class="col-md-6 col-lg-auto">
+                        <div class="form__group">
+                          <label class="form__checkbox">
+                            <input class="visually-hidden" type="checkbox" checked name="ui-checkbox"><span class="checkbox__content">Checkbox 1</span>
+                          </label>
+                        </div>
+                  </div>
+                  <div class="col-md-6 col-lg-auto">
+                        <div class="form__group js-group-validate">
+                          <label class="form__checkbox">
+                            <input class="visually-hidden js-field-validate" type="checkbox" name="ui-checkbox" required><span class="checkbox__content">Checkbox 2</span>
+                          </label>
+                        </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-lg-4">
+                        <div class="form__group js-group-validate">
+                          <label class="form__label">Textarea example:</label>
+                          <textarea class="form__field border rounded py-2 px-3 js-field-validate" rows="3" required placeholder="Textarea placeholder" data-validate-length="3"></textarea>
+                        </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                        <div class="form__group js-group-validate">
+                          <label class="form__label">Text input example:</label>
+                          <input class="form__field border rounded py-2 px-3 js-field-validate" type="text" required placeholder="Text input placeholder">
+                        </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                        <div class="form__group js-group-validate">
+                          <label class="form__label">Number input example:</label>
+                          <input class="form__field border rounded py-2 px-3 js-field-validate" type="number" required placeholder="Number input placeholder">
+                        </div>
+                  </div>
+                </div>
+                    <button class="button button--default border rounded px-4 py-2" type="submit"><span class="button__content">Submit</span></button>
+              </form>
+              <hr class="my-4">
+              <div class="row gx-3 py-4">
+                <div class="col-auto">
+                  <div class="spinner-border text-primary"></div>
+                </div>
+                <div class="col-auto">
+                  <div class="spinner-border text-secondary"></div>
+                </div>
+                <div class="col-auto">
+                  <div class="spinner-border text-success"></div>
+                </div>
+                <div class="col-auto">
+                  <div class="spinner-border text-danger"></div>
+                </div>
+              </div>
+              <hr class="my-4">
+              <div class="row py-4">
+                <div class="col-sm-6">
+                  <p>Lazy image as img and width broken url:</p>
+                  <div class="ratio ratio-16x9">
+                        <div class="js-lazy-image lazy__image w-100 h-100"><img class="lazy__image-element js-lazy-image-element w-100 h-100 w-100" data-lazy-src="https://picsum.photos/i/0/1600/900" alt="Альтернативное описание">
+                          <div class="lazy__image-loader js-lazy-image-loader">
+                            <div class="spinner-border text-secondary" role="status"></div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <p>Lazy image as background:</p>
+                  <div class="ratio ratio-16x9">
+                        <div class="js-lazy-image lazy__image w-100 h-100">
+                          <div class="lazy__image-element js-lazy-image-element w-100 h-100" data-lazy-bg="https://picsum.photos/id/10/1600/900"></div>
+                          <div class="lazy__image-loader js-lazy-image-loader">
+                            <div class="spinner-border text-secondary" role="status"></div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+        <footer class="footer js-footer section-offset--start">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="copyright">Copyright - ThriveTalk  2017</div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-start" id="siteMenu" tabindex="-1">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottom" tabindex="-1">Title</h5>
+        <button class="btn-close text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="offcanvas-nav">
+          <div class="offcanvas-menu d-flex flex-column justify-content-between"><a class="menu-link js-menu-link" href="#intro">Home</a><a class="menu-link js-menu-link" href="#about">About</a><a class="menu-link js-menu-link" href="#procedure">Services</a><a class="menu-link js-menu-link" href="#plans">Blog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/iePolyfills.js"></script>
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
